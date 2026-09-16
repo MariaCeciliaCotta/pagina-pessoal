@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal - Maria Cecília Cotta</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar"> <!--nav bara para navegação entre os principais links-->
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobremim.html">Sobre mim</a></li>
+                <li><a href="horarios.html">Grade de Horários</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="https://www.ibmec.br" target="_blank">Site do IBMEC</a></li>
+            </ul>
+        </nav>
+        <h1>Maria Cecília Cotta</h1>
+        <img src="assets/imagemibmec.jpg" alt="Foto logo do IBMEC">
+    </header>
+    <main>
+        <section id="sobremiminicio"> <!-- Utilização de elementos textuais com tags semânticas-->
+            <h2>Sobre mim</h2>
+            <p>Meu nome é <strong>Maria Cecília Cotta</strong>, tenho 19 anos e estou cursando o 2° período de
+                <em>Ciência de Dados e Inteligência Artificial</em> no IBMEC. Sou formada no ensino médio e no curso
+                técnico de eletrônica pelo CEFET-MG.
+            </p>
+            <h3>Meus interesses</h3> <!--Lista não ordenada-->
+            <ul>
+                <li>Músicas</li>
+                <li>Filmes e séries</li>
+                <li>Futebol</li>
+                <li>Programação</li>
+                <li>Eletrônica</li>
+            </ul>
+            <p>Para saber mais sobre o meu perfil clique aqui:<a href="sobremim.html">Sobre mim</a></p>
+
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Dança
+                    <ul>
+                        <li>Gosto de dançar diferentes tipos de músicas.</li>
+                        <li>Gosto de dançar para me exercitar.</li>
+                        <li>Dançar me deixa mais feliz.</li>
+                    </ul>
+                </li>
+                <li>Crochê
+                    <ul>
+                        <li>O crochê me permite fazer minhas próprias coisas.</li>
+                        <li>É um hobbie que me deixa fora das telas.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="curso">
+            <!--Utilização de tags semânticas com article com conteúdo principal e aside com conteúdo complementar-->
+            <h2>O curso</h2>
+            <article>
+                <h3>Ciência de dados e Inteligência Artificial</h3>
+                <p>O bacharelado em Ciência de Dados e Inteligência Artificial do Ibmec forma profissionais completos
+                    que unem tecnologia de ponta à visão estratégica de mercado. Ao longo de 4 anos, o curso desenvolve
+                    uma base forte em matemática, estatística e desenvolvimento de software, capacitando o aluno a atuar
+                    desde a infraestrutura de dados até a modelagem avançada de Machine Learning e Deep Learning. É a
+                    escolha ideal para quem quer dominar programação, nuvem e algoritmos não apenas pelo código, mas
+                    como ferramentas para criar inovação real nos negócios.</p>
+                <aside>
+                    <h4>Por que escolhi ciência de dados?</h4>
+                    <p>No começo, Ciência da Computação era a minha primeira escolha. Mas, pesquisando mais a fundo,
+                        percebi o impacto real que a área de dados gera: hoje em dia, nenhuma empresa sobrevive sem
+                        tomar decisões baseadas em dados concretos. A oportunidade de ganhar uma bolsa para um curso
+                        mais recente e inovador acabou acelerando a transição. Hoje, vejo que lidar com esse volume de
+                        informações e transformá-las em estratégias e soluções práticas é exatamente o tipo de desafio
+                        em que quero construir minha carreira.</p>
+                </aside>
+            </article>
+            <h3>Meus objetivos no curso</h3> <!--Lista de objetivos-->
+            <ol>
+                <li>Dominar a base matemática e de programação para criar uma fundação sólida em algoritmos e análise.
+                </li>
+                <li>Praticar com projetos reais, unindo dados e código para resolver problemas do mercado.</li>
+                <li>Construir um portfólio forte ao longo do curso.</li>
+                <li>Alcançar a fluência em inglês.</li>
+            </ol>
+
+        </section>
+        <section id="contato"> <!--Utilização de formulário para contato-->
+            <h2>Contato</h2>
+            <form action="/enviar" method="post">
+                <fieldset>
+                    <legend>Dados para contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required minlength="3"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999"><br>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="dv">Dúvida</option>
+                        <option value="sug">Sugestão</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="out">Outro</option>
+                    </select><br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="30" placeholder="Digite sua mensagem"
+                        required></textarea><br>
+                    <input type="checkbox" id="aceite" name="aceite" value="sim">
+                    <label for="aceite">Aceito receber atualizações sobre o site</label><br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+    <footer> <!--Rodapé da página-->
+        <p>&copy; 2026 Meu Site</p>
+        <p>mariacecilia.cotta1@gmail.com</p>
+    </footer>
+</body>
+
+</html>
